@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carga de Currículum Vitae</title>
+</head>
+<body>
+
+    <h1>Formulario de Carga de Currículum Vitae (CV)</h1>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend><strong>a. Datos Personales</strong></legend>
+            <br>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            <br><br>
+
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" id="nacionalidad" name="nacionalidad">
+            <br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            <br><br>
+
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <br><br>
+
+            <label for="linkedin">Perfil de LinkedIn (Enlace):</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/...">
+            <br><br>
+
+            <label for="foto">Foto de perfil:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+            <br><br>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend><strong>b. Información Académica</strong></legend>
+            <br>
+            <label for="titulo">Título u obtención académica:</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Ej: Licenciado en Administración" required>
+            <br><br>
+
+            <label for="institucion">Institución / Universidad / Escuela:</label>
+            <input type="text" id="institucion" name="institucion" required>
+            <br><br>
+
+            <label for="nivel_estudios">Nivel de estudios:</label>
+            <select id="nivel_estudios" name="nivel_estudios">
+                <option value="secundario">Secundario</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+                <option value="posgrado">Posgrado/Máster</option>
+                <option value="curso">Curso/Certificación</option>
+            </select>
+            <br><br>
+
+            <label for="estado_academico">Estado:</label>
+            <input type="radio" id="en_curso" name="estado_academico" value="en_curso">
+            <label for="en_curso">En curso</label>
+            <input type="radio" id="graduado" name="estado_academico" value="graduado" checked>
+            <label for="graduado">Graduado</label>
+            <input type="radio" id="abandonado" name="estado_academico" value="abandonado">
+            <label for="abandonado">Incompleto</label>
+            <br><br>
+
+            <label for="fecha_inicio_edu">Fecha de inicio:</label>
+            <input type="month" id="fecha_inicio_edu" name="fecha_inicio_edu">
+            <br><br>
+
+            <label for="fecha_fin_edu">Fecha de finalización (o estimada):</label>
+            <input type="month" id="fecha_fin_edu" name="fecha_fin_edu">
+            <br><br>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend><strong>c. Experiencia Laboral</strong></legend>
+            <br>
+            <label for="puesto">Puesto / Cargo ocupado:</label>
+            <input type="text" id="puesto" name="puesto" placeholder="Ej: Desarrollador Web Frontend">
+            <br><br>
+
+            <label for="empresa">Empresa / Organización:</label>
+            <input type="text" id="empresa" name="empresa">
+            <br><br>
+
+            <label for="fecha_inicio_lab">Fecha de ingreso:</label>
+            <input type="month" id="fecha_inicio_lab" name="fecha_inicio_lab">
+            <br><br>
+
+            <label for="fecha_fin_lab">Fecha de egreso:</label>
+            <input type="month" id="fecha_fin_lab" name="fecha_fin_lab">
+            <br><br>
+
+            <label for="trabajo_actual">Trabajo actual:</label>
+            <input type="checkbox" id="trabajo_actual" name="trabajo_actual" value="si"> Sí, trabajo aquí actualmente.
+            <br><br>
+
+            <label for="tareas">Descripción de tareas y logros:</label>
+            <br>
+            <textarea id="tareas" name="tareas" rows="5" cols="50" placeholder="Describe brevemente tus responsabilidades..."></textarea>
+            <br><br>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend><strong>d. Referencias Laborales / Académicas</strong></legend>
+            <br>
+            <label for="nombre_referencia">Nombre del referente:</label>
+            <input type="text" id="nombre_referencia" name="nombre_referencia" placeholder="Ej: Tec. Alejo vega">
+            <br><br>
+
+            <label for="cargo_referencia">Cargo y Empresa del referente:</label>
+            <input type="text" id="cargo_referencia" name="cargo_referencia" placeholder="Ej: Gerente de Sistemas en Tech SRL">
+            <br><br>
+
+            <label for="contacto_referencia">Teléfono o Email de contacto:</label>
+            <input type="text" id="contacto_referencia" name="contacto_referencia">
+            <br><br>
+        </fieldset>
+
+        <br><br>
+
+        <input type="submit" value="Guardar y Enviar Currículum">
+        <input type="reset" value="Limpiar Formulario">
+
+    </form>
+
+</body>
+</html>
